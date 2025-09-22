@@ -1,0 +1,16 @@
+Exp_ID,Model_Type,LSTM_Units,Layers,Dropout,Learning_Rate,Batch_Size,Epochs,Val_RMSE,Test_RMSE,Training_Time,Notes
+EXP_001,LSTM_Baseline,32,1,0.2,0.001,32,10,145.32,149.78,2.3 min,Simple baseline model
+EXP_002,LSTM_Medium,64,2,0.3,0.001,32,15,98.45,102.18,5.1 min,Improved architecture
+EXP_003,LSTM_Deep,128,3,0.4,0.0005,16,20,89.67,91.23,12.7 min,"Deep architecture, slower training"
+EXP_004,LSTM_FastTrain,32,1,0.1,0.002,64,5,156.78,161.45,1.2 min,"Fast training, lower accuracy"
+EXP_005,LSTM_HighDropout,64,2,0.5,0.001,32,15,112.34,115.67,5.8 min,High dropout for regularization
+EXP_006,LSTM_LowLR,64,2,0.3,0.0001,32,25,85.12,87.89,9.2 min,"Low learning rate, careful training"
+EXP_007,LSTM_BEST,64,2,0.35,0.0008,24,20,71.98,74.23,7.5 min,⭐ BEST MODEL - Optimal hyperparameters
+EXP_008,LSTM_SmallBatch,64,2,0.3,0.001,8,15,93.78,96.45,11.3 min,Small batch size experiment
+EXP_009,LSTM_LargeBatch,64,2,0.3,0.001,128,15,108.56,111.23,3.1 min,"Large batch size, faster but less accurate"
+EXP_010,LSTM_Complex,"128,64,32",3,0.4,0.0005,16,25,78.45,81.67,18.2 min,Decreasing LSTM units architecture
+EXP_011,LSTM_VeryDeep,96,4,0.3,0.0005,32,30,94.23,97.56,22.4 min,"4-layer architecture, diminishing returns"
+EXP_012,LSTM_Regularized,64,2,0.4,0.0008,16,20,76.89,79.12,8.9 min,Heavy regularization with optimal LR
+EXP_013,LSTM_HighLR,64,2,0.3,0.0015,32,15,101.67,104.89,4.2 min,"High learning rate, unstable training"
+EXP_014,LSTM_OptimalBatch,64,2,0.35,0.0008,16,20,73.45,76.23,9.1 min,Smaller batch size with best hyperparams
+EXP_015,LSTM_BigUnits,256,2,0.45,0.0005,32,25,82.34,85.67,15.7 min,"Large units, high capacity model"
